@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tinder Bahuet</title>
+  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<!-- Form Mixin-->
+<!-- Input Mixin-->
+<!-- Button Mixin-->
+<!-- Pen Title-->
+<div class="pen-title">
+  <h1>Tinder Bahuet</h1>
+</div>
+<!-- Form Module-->
+<div class="module form-module">
+  <div class="toggle"><i class="fa fa-times fa-pencil"> Inscription</i>
+    
+  </div>
+  <div class="form">
+    <h2>Connectez-vous pour accéder à Tinder Bahuet.</h2>
+    <form method="POST" action="connexion/checkconn.php">
+      <input type="text" name="mail" placeholder="Adresse e-mail" required />
+      <input type="password" name="mdp" placeholder="Mot de passe" required />
+      <input type="submit" name="submit" value="Connexion">
+    </form>
+  </div>
+  <div class="form">
+    <h2>Créer un compte </h2>
+    <form method="POST" action="valider/user_valider.php">
+      <input type="nom" name="nom" placeholder="Nom"/>
+	  <input type="prenom" name="prenom" placeholder="Prenom"/>
+	  <input type="email" name="mail" placeholder="Adresse e-mail"/>
+      <input type="password" name="mdp" placeholder="Mot de passe"/>
+	  <input type="password" name="mdp2" placeholder="Confirmez le mot de passe"/>
+	  <select>
+			<option>Une femme</option>
+			<option>Un homme</option>
+	  </select>
+	  Votre date de naissance :
+	  <input type="date" name="dna">
+      <button>Register</button>
+    </form>
+  </div>
+  <div class="cta"><a>Besoin d'aide ?</a></div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
